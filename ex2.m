@@ -9,7 +9,7 @@
 %
 %     sigmoid.m
 %     costFunction.m
-%     predict.m
+%     predict1.m
 %     costFunctionReg.m
 %
 %  For this exercise, you will not need to change any code in this file,
@@ -142,7 +142,7 @@ fprintf(['For a student with scores 45 and 85, we predict an admission ' ...
 fprintf('Expected value: 0.775 +/- 0.002\n\n');
 
 % Compute accuracy on our training set
-p = predict(theta, X);
+p = predict1(theta, X);
 
 fprintf('Train Accuracy: %f\n', mean(double(p == y)) * 100);
 fprintf('Expected accuracy (approx): 89.0\n');
